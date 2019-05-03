@@ -44,6 +44,12 @@ body {
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+     img:not(.blast){
+       display: none;
+     }
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -52,6 +58,7 @@ body {
 
       @media @phone {
         width: 80%;
+        margin-left: 20px;
       }
     }
 
